@@ -1,0 +1,21 @@
+.content__header-wrap {
+  display: flex;
+  padding: 2.4rem 0 1.2rem 0;
+}
+
+.content__header-wrap::before {
+  content: "";
+  border-right: 0.4rem solid var(--bright-turquoise);
+  border-radius: 0 5rem 5rem 0;
+}
+
+.content__header {
+  padding: 0 1.6rem;
+}
+
+@media (min-width: 70em) {
+  .content__header-wrap {
+    padding-top: 4.2rem;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,18 @@
+.sidebar__wrapper {
+  background-color: var(--shaded-white);
+  height: 100%;
+}
+
+.sidebar {
+  background-color: var(--pure-white);
+  max-width: 36rem;
+  padding: 1.6rem 2.4rem;
+  height: 100%;
+  box-shadow: 1.6rem 0 5.2rem 0 var(--sidebar-shadow);
+}
+
+.sidebar__header {
+  display: flex;
+  padding-bottom: 2.8rem;
+  align-items: center;
+}

@@ -1,0 +1,52 @@
+<div class="swiper-slide brand">
+  <span class="brand__logo brand__logo--lenovo">
+    <img src="./assets/images/brands/lenovo.svg">
+  </span>
+  <span class="button-icon button-icon__go-button"></span>
+</div>
+<div class="swiper-slide brand">
+  <span class="brand__logo brand__logo--samsung">
+    <img src="./assets/images/brands/samsung.svg">
+  </span>
+  <span class="button-icon button-icon__go-button"></span>
+</div>
+<div class="swiper-slide brand">
+  <span class="brand__logo brand__logo--apple">
+    <img src="./assets/images/brands/apple.svg">
+  </span>
+  <span class="button-icon button-icon__go-button"></span>
+</div>
+<div class="swiper-slide brand">
+  <span class="brand__logo brand__logo--viewsonic">
+    <img src="./assets/images/brands/viewsonic.svg">
+  </span>
+  <span class="button-icon button-icon__go-button"></span>
+</div>
+<div class="swiper-slide brand">
+  <span class="brand__logo brand__logo--bosch">
+    <img src="./assets/images/brands/bosch.svg">
+  </span>
+  <span class="button-icon button-icon__go-button"></span>
+</div>
+<div class="swiper-slide brand">
+  <span class="brand__logo brand__logo--hp">
+    <img src="./assets/images/brands/hp.svg">
+  </span>
+  <span class="button-icon button-icon__go-button"></span>
+</div>
+<div class="swiper-slide brand">
+  <span class="brand__logo brand__logo--acer">
+    <img src="./assets/images/brands/acer.svg">
+  </span>
+  <span class="button-icon button-icon__go-button"></span>
+</div>
+<div class="swiper-slide brand">
+  <span class="brand__logo brand__logo--sony">
+    <img src="./assets/images/brands/sony.svg">
+  </span>
+  <span class="button-icon button-icon__go-button"></span>
+</div>
+
+
+
+

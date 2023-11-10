@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <div class="sidebar__wrapper">
+      <aside class="sidebar">
+        <header class="sidebar__header">
+          <button class="button button--round sidebar__sidebar-closer-button">Закрыть меню<span class="button-icon button-icon__sidebar-closer-button"></span></button>
+          <div class="logo">
+            <a href="index.html" aria-label="Главная страница CPS">
+              <img src="../assets/images/logo.svg" aria-hidden="true">
+            </a>
+          </div>
+          <button class="button button--round sidebar__search-button">Поиск<span class="button-icon button-icon__search-button"></span></button>
+        </header>
+        <ul class="nav sidebar__nav" aria-label="Основное меню">
+          <li class="nav-elem sidebar__nav-elem"><a class="nav-ref sidebar__nav-ref" href="#" target="_self">Ремонт техники</a></li>
+          <li class="nav-elem sidebar__nav-elem"><a class="nav-ref sidebar__nav-ref" href="#" target="_self">Услуги и сервисы</a></li>
+          <li class="nav-elem sidebar__nav-elem"><a class="nav-ref sidebar__nav-ref" href="#" target="_self">Корпоративным клиентам</a></li>
+          <li class="nav-elem sidebar__nav-elem"><a class="nav-ref sidebar__nav-ref" href="#" target="_self">Продавцам техники</a></li>
+          <li class="nav-elem sidebar__nav-elem"><a class="nav-ref sidebar__nav-ref" href="#" target="_self">Партнёрам</a></li>
+          <li class="nav-elem sidebar__nav-elem"><a class="nav-ref sidebar__nav-ref" href="#" target="_self">Производителям</a></li>
+          <li class="nav-elem sidebar__nav-elem"><a class="nav-ref sidebar__nav-ref" href="#" target="_self">Наши сервисные центры</a></li>
+          <li class="nav-elem sidebar__nav-elem"><a class="nav-ref sidebar__nav-ref" href="#" target="_self">Контакты</a></li>
+        </ul>
+        <footer class="sidebar__footer">
+          <div class="sidebar__action-buttons">
+            <button class="button button--round sidebar__call-button">Звонок<span class="button-icon button-icon__call-button"></span></button>
+            <button class="button button--round sidebar__chat-button">Чат<span class="button-icon button-icon__chat-button"></span></button>
+            <button class="button button--round sidebar__profile-button">Профиль<span class="button-icon button-icon__profile-button"></span></button>
+          </div>
+          <ul class="contacts">
+            <li class="contact-mail"><a class="contact-mail__ref" target="_blank" href="mailto:mail@cps.com">mail@cps.com</a></li>
+            <li class="contact-phone"><a class="contact-phone__ref" target="_self" href="tel:+78008808900">8 800 880 8900</a></li>
+          </ul>
+          <ul class="radio-lang" aria-label="Выбор языка">
+            <li><input class="radio-lang__button visually-hidden" id="lang-ru" type="radio" name="lang" checked><label class="radio-lang__label" for="lang-ru">RU</label></li>
+            <li><input class="radio-lang__button visually-hidden" id="lang-en" type="radio" name="lang"><label class="radio-lang__label" for="lang-en">EN</label></li>
+            <li><input class="radio-lang__button visually-hidden" id="lang-ch" type="radio" name="lang"><label class="radio-lang__label" for="lang-ch">CH</label></li>
+          </ul>
+        </footer>
+      </aside>
+    </div>
+  </body>
+</html>

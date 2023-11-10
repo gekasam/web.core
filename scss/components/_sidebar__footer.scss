@@ -1,0 +1,28 @@
+.sidebar__footer {
+  padding: 0.8rem 0 3.2rem 0;
+}
+
+.contacts {
+  padding-bottom: 0.8rem;;
+}
+
+.contact-mail {
+  padding-bottom: 1.2rem;;
+}
+
+.contact-mail__ref, .contact-phone__ref {
+  color: var(--text-black);
+  transition: 0.1s ease-in;
+}
+
+.contact-phone__ref {
+  text-decoration: none;
+}
+
+.contact-mail__ref:hover, .contact-phone__ref:hover {
+  color: var(--text-gray);
+}
+
+.radio-lang {
+  display: flex;
+}

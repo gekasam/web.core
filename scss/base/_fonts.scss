@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('./assets/fonts/TTLakes/TTLakes-Bold.eot');
+  src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+      url('./assets/fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
+      url('./assets/fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('./assets/fonts/TTLakes/TTLakes-Medium.eot');
+  src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+      url('./assets/fonts/TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/TTLakes/TTLakes-Medium.woff') format('woff'),
+      url('./assets/fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('./assets/fonts/TTLakes/TTLakes-Regular.eot');
+  src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+      url('./assets/fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
+      url('./assets/fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*1rem = 10px*/
+html {
+  font-size: 62.5%;
+  font-family: "TT Lakes", sans-serif;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+.button {
+  white-space: nowrap;
+}
+
+.button--round {
+  font-size: 0;
+  color: transparent;
+}
+
+.content {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.content__header {
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+
+.nav {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* TODO: Split fonts into groups */
+
+.more {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.brands__header {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.contact-phone {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+@media (min-width: 34em) {
+  .about__text {
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 70em) {
+  .header__request-buttons .button--round {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-black);
+  }
+}

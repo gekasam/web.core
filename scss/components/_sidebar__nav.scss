@@ -1,0 +1,26 @@
+.sidebar__nav-elem {
+  padding-bottom: 2.4rem;
+}
+
+.sidebar__nav-ref {
+  position: relative;
+  color: var(--text-black);
+  transition: 0.1s ease-in;
+}
+
+.sidebar__nav-ref:hover {
+  color: var(--text-gray);
+}
+
+.sidebar__nav-ref:focus {
+  color: var(--text-gray);
+}
+.sidebar__nav-ref:focus::before {
+  position: absolute;
+  left: -2.4rem;
+  content: "";
+  width: 0;
+  height: 100%;
+  border-right: 0.4rem solid var(--bright-turquoise);
+  border-radius: 0  0.4rem 0.4rem 0;
+}

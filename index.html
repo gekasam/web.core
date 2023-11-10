@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CPS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a class="nav-ref content__nav-ref" href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="header">
+      <div class="header__wrap">
+        <button class="button button--round header__sidebar-open-button">Меню<span class="button-icon button-icon__sidebar-open-button"></span></button>
+        <div class="logo header__logo">
+          <a href="index.html" aria-label="Главная страница CPS">
+            <img src="assets/images/logo.svg" aria-hidden="true">
+          </a>
+        </div>
+        <div class="header__action-buttons">
+          <button class="button button--round call-button header__call-button">Звонок<span class="button-icon button-icon__call-button"></span></button>
+          <button class="button button--round chat-button header__chat-button">Чат<span class="button-icon button-icon__chat-button"></span></button>
+          <button class="button button--round profile-button header__profile-button">Профиль<span class="button-icon button-icon__profile-button"></span></button>
+        </div>
+        <div class="header__request-buttons">
+          <button class="button button--round header__repair-button">Оставить заявку<span class="button-icon button-icon__repair-button"></span></button>
+          <button class="button button--round header__checkstatus-button">Статус ремонта<span class="button-icon button-icon__checkstatus-button"></span></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="content__header-wrap">
+          <h1 class="content__header">Услуги и сервисы</h1>
+        </div>
+        <ul class="nav content__nav" aria-label="Панель навигации">
+          <li class="nav-elem content__nav-elem">
+            <a class="nav-ref content__nav-ref" href="#" autofocus>Ремонтируемые бренды</a>
+          </li>
+          <li class="nav-elem content__nav-elem">
+            <a class="nav-ref content__nav-ref" href="#">Ремонтируемые устройства</a>
+          </li>
+          <li class="nav-elem content__nav-elem">
+            <a class="nav-ref content__nav-ref" href="#">Дополнительные услуги</a>
+          </li>
+          <li class="nav-elem content__nav-elem">
+            <a class="nav-ref content__nav-ref" href="#">Цены на услуги</a>
+          </li>
+          <li class="nav-elem content__nav-elem">
+            <a class="nav-ref content__nav-ref" href="#">Аренда сервисных центров</a>
+          </li>
+          <li class="nav-elem content__nav-elem">
+            <a class="nav-ref content__nav-ref" href="#">Специальные цены</a>
+          </li>
+          <li class="nav-elem content__nav-elem">
+            <a class="nav-ref content__nav-ref" href="#">Отзывы</a>
+          </li>
+        </ul>
+        <section class="about">
+          <div class="about__text">
+            <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+          <button class="button more about__more">Читать далее</button>
+          </div>
+          <div class="about__image">
+            <img class="about__img" src="assets/images/logo-photo.png" aria-hidden="true">
+          </div>
+        </section>
+        <section class="brands">
+          <div class="brands__header-wrap">
+            <h1 class="brands__header">РЕМОНТ ТЕХНИКИ РАЗЛИИЧНЫХ БРЕНДОВ</h1>
+          </div>
+          <div class="brands__content">
+            <div class="swiper brandsSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide brand">
+                  <div class="brand__logo-wrap">
+                    <div class="brand__logo brand__logo--lenovo"></div>
+                  </div>
+                  <div class="button button--round"><span class="button-icon button-icon__go-button"></span></div>
+                </div>
+                <div class="swiper-slide brand">
+                  <div class="brand__logo-wrap">
+                    <div class="brand__logo brand__logo--samsung"></div>
+                  </div>
+                  <div class="button button--round"><span class="button-icon button-icon__go-button"></span></div>
+                </div>
+                <div class="swiper-slide brand">
+                  <div class="brand__logo-wrap">
+                    <div class="brand__logo brand__logo--apple"></div>
+                  </div>
+                  <div class="button button--round"><span class="button-icon button-icon__go-button"></span></div>
+                </div>
+                <div class="swiper-slide brand">
+                  <div class="brand__logo-wrap">
+                    <div class="brand__logo brand__logo--viewsonic"></div>
+                  </div>
+                  <div class="button button--round"><span class="button-icon button-icon__go-button"></span></div>
+                </div>
+                <div class="swiper-slide brand">
+                  <div class="brand__logo-wrap">
+                    <div class="brand__logo brand__logo--bosch"></div>
+                  </div>
+                  <div class="button button--round"><span class="button-icon button-icon__go-button"></span></div>
+                </div>
+                <div class="swiper-slide brand">
+                  <div class="brand__logo-wrap">
+                    <div class="brand__logo brand__logo--hp"></div>
+                  </div>
+                  <div class="button button--round"><span class="button-icon button-icon__go-button"></span></div>
+                </div>
+                <div class="swiper-slide brand">
+                  <div class="brand__logo-wrap">
+                    <div class="brand__logo brand__logo--acer"></div>
+                  </div>
+                  <div class="button button--round"><span class="button-icon button-icon__go-button"></span></div>
+                </div>
+                <div class="swiper-slide brand">
+                  <div class="brand__logo-wrap">
+                    <div class="brand__logo brand__logo--sony"></div>
+                  </div>
+                  <div class="button button--round"><span class="button-icon button-icon__go-button"></span></div>
+                </div>
+                <div class="swiper-slide brand">
+                  <div class="brand__logo-wrap">
+                    <div class="brand__logo brand__logo--lenovo"></div>
+                  </div>
+                  <div class="button button--round"><span class="button-icon button-icon__go-button"></span></div>
+                </div>
+                <div class="swiper-slide brand">
+                  <div class="brand__logo-wrap">
+                    <div class="brand__logo brand__logo--samsung"></div>
+                  </div>
+                  <div class="button button--round"><span class="button-icon button-icon__go-button"></span></div>
+                </div>
+                <div class="swiper-slide brand">
+                  <div class="brand__logo-wrap">
+                    <div class="brand__logo brand__logo--apple"></div>
+                  </div>
+                  <div class="button button--round"><span class="button-icon button-icon__go-button"></span></div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <button id="button-more-brands" class="button more brands__more">Показать ещё</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      if (window.innerWidth < 768) {
+        var swiper = new Swiper(".brandsSwiper", {
+          slidesPerView: 1.25,
+          slidesOffsetAfter: 20,
+          spaceBetween: 16,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          breakpoints: {
+            768: {
+              enabled: false
+            },
+          },
+        });
+      }
+      
+      
+    </script>
+    <script>
+      var moreToggle = document.querySelector('#button-more-brands');
+      moreToggle.addEventListener('click', function() {
+        document.querySelector('.swiper-wrapper').classList.toggle("brands--full-height");
+        if (moreToggle.textContent != 'Скрыть') {
+          moreToggle.textContent = 'Скрыть';
+          moreToggle.classList.toggle('more-reverse');
+        } else {
+          moreToggle.textContent = 'Показать ещё';
+          moreToggle.classList.toggle('more-reverse');
+        }
+        
+      })
+    </script>
+  </body>
+</html>

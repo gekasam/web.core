@@ -1,0 +1,172 @@
+/*Common buttons*/
+
+.button  {
+  background: none;
+  border: none;
+}
+
+/*Round buttons*/
+.button--round {
+  vertical-align: middle;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  transition: 0.1s ease-in;
+}
+
+.button--round:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.button-icon {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*Content page buttons*/
+
+.button-icon__sidebar-open-button {
+  background-image: url(assets/icons/burger.svg);
+}
+
+.header__action-buttons .button {
+  margin-left: 16px;
+  display: none;
+}
+
+.header__request-buttons {
+  display: flex;
+}
+
+.header__request-buttons .button {
+  margin-left: 1.6rem;
+}
+
+.button-icon__repair-button {
+  background-image: url(assets/icons/repair.svg);
+}
+
+.button-icon__checkstatus-button {
+  background-image: url(assets/icons/checkstatus.svg);
+}
+
+.button-icon__go-button {
+  background-image: url(assets/icons/go.svg);
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+  transition: 0.1s ease-in;
+}
+
+.brands__more {
+  padding-top: 2.4rem;
+}
+
+.more::before {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(assets/icons/expand.svg);
+}
+
+.more-reverse::before {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(assets/icons/expand.svg);
+  transform: rotate(180deg);
+}
+
+.more:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/*Side menu buttons*/
+
+.button-icon__sidebar-closer-button {
+  background-image: url(assets/icons/closer.svg);
+}
+
+.button-icon__search-button {
+  background-image: url(assets/icons/search.svg);
+}
+
+.sidebar__action-buttons {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.6rem;
+}
+
+.sidebar__action-buttons .button {
+  margin-right: 1.6rem;
+}
+
+.button-icon__call-button {
+  background-image: url(assets/icons/call.svg);
+}
+
+.button-icon__chat-button {
+  background-image: url(assets/icons/chat.svg);
+}
+
+.button-icon__profile-button {
+  background-image: url(assets/icons/profile.svg);
+}
+
+.radio-lang__label {
+  margin-right: 0.7rem;
+  transition: 0.1s ease-in;
+}
+
+.radio-lang__label:hover {
+  color: var(--text-gray);
+  cursor: pointer;
+}
+
+.radio-lang__button:checked ~ label {
+  color: var(--text-gray);
+}
+
+@media (min-width: 34em) {
+  .header__action-buttons .button {
+    display: inline-block;
+  }
+
+  .header__request-buttons::before {
+    content: "";
+    height: 3.2rem;
+    width: 1.6rem;
+    border-right: 0.2rem solid var(--light-gray);
+    align-self: center;
+  }
+}
+
+@media (min-width: 70em) {
+  .header__sidebar-open-button {
+    display: none;
+  }
+
+  .header__action-buttons .button {
+    display: none;
+  }
+
+  .header__request-buttons .button {
+    border-radius: 1rem;
+  }
+
+  .header__request-buttons .button-icon {
+    margin-left: 0.8rem;
+  }
+
+  .header__request-buttons::before {
+    display: none;
+  }
+}

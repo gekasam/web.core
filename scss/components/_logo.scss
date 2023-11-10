@@ -1,0 +1,35 @@
+.logo {
+  padding: 0 1.6rem;
+  flex-grow: 1;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo::after {
+  content: "";
+  height: 3.2rem;
+  width: 1.6rem;
+  border-right: 0.2rem solid var(--light-gray);
+}
+
+@media (min-width: 34em) {
+  .header__logo::after {
+    display: none;
+  }
+
+  .header__logo::before {
+    content: "";
+    height: 3.2rem;
+    width: 1.6rem;
+    border-left: 0.2rem solid var(--light-gray);
+  }
+}
+
+@media (min-width: 70em) {
+  .header__logo {
+    display: none;
+  }
+}

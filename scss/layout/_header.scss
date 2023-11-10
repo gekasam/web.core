@@ -1,0 +1,23 @@
+.header__wrap {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.8rem 1.6rem;
+  justify-content: space-between;
+  background-color: var(--main-white);
+  border-bottom: 0.1rem solid var(--frosted-mint);
+  align-items: center;
+}
+
+@media (min-width: 70em) {
+  .header {
+    height: 0;
+  }
+
+  .header__wrap {
+    justify-content: flex-end;
+    padding-top: 4.2rem;
+    box-shadow: none;
+  }
+}
