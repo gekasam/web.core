@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production && xcopy /E /H /C /I /Y dist wc.dist",
     "dev": "webpack --mode development",
     "start": "webpack-dev-server --mode development --open"
   },
