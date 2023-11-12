@@ -5,7 +5,7 @@
   z-index: 100;
   display: flex;
   flex-direction: column;
-  max-width: 44rem;
+  max-width: 100%;
   background-color: var(--pure-white);
   padding: 2.4rem 1.6rem;
   height: 100%;
@@ -60,6 +60,10 @@
 }
 
 @media (min-width: 48em) {
+  .feedback {
+    max-width: 44rem;
+  }
+
   .feedback__feedback-closer-button {
     position: absolute;
     left: -8.9rem;
