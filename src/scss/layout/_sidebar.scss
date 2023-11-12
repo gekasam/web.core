@@ -3,7 +3,7 @@
   top: 0;
   left: -100%;
   background-color: var(--pure-white);
-  max-width: 36rem;
+  min-width: 100%;
   padding: 1.6rem 2.4rem;
   height: 100%;
   box-shadow: 1.6rem 0 5.2rem 0 var(--sidebar-shadow);
@@ -22,10 +22,15 @@
   transition: ease-out 0.7s;
 }
 
+@media (min-width: 48em) {
+  .sidebar {
+    min-width: 31rem;
+  }
+}
+
 @media (min-width: 70em) {
   .sidebar {
     position: static;
-    min-width: 31rem;
     box-shadow: none;
     padding-top: 3.2rem;
     z-index: 49;

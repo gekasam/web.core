@@ -11,6 +11,7 @@ let sidebar = document.querySelector('.sidebar');
 let buttonSideOpen = document.querySelector('.header__sidebar-open-button');
 let buttonSideClose = document.querySelector('.sidebar__sidebar-closer-button');
 let pageBlur = document.querySelector('.page-blur');
+let sidebarVisible = false;
 
 /* Brands more */
 
@@ -40,11 +41,13 @@ let callVisible = false;
 buttonSideOpen.addEventListener('click', () => {
   sidebar.classList.add('sidebar--active');
   pageBlur.classList.add('page-blur--active');
+  sidebarVisible = true;
 })
 
 buttonSideClose.addEventListener('click', () => {
   sidebar.classList.remove('sidebar--active');
   pageBlur.classList.remove('page-blur--active');
+  sidebarVisible = false;
 })
 
 /* Page blur */
@@ -54,6 +57,7 @@ pageBlur.addEventListener('click', () => {
   feedback.classList.remove('feedback--show');
   call.classList.remove('call--show');
   pageBlur.classList.remove('page-blur--active');
+  sidebarVisible = false;
   feedbackVisible = false;
   callVisible = false;
 });
@@ -181,7 +185,9 @@ if (window.innerWidth >= 768) {
 
 feedbackClose.addEventListener('click', function () {
   feedback.classList.remove('feedback--show');
-  pageBlur.classList.remove('page-blur--active');
+  if (!sidebarVisible) {
+    pageBlur.classList.remove('page-blur--active');
+  }
   feedbackVisible = false;
 });
 
@@ -205,7 +211,9 @@ for (let button of feedbackButton) {
 
 callClose.addEventListener('click', function () {
   call.classList.remove('call--show');
-  pageBlur.classList.remove('page-blur--active');
+  if (!sidebarVisible) {
+    pageBlur.classList.remove('page-blur--active');
+  }
   callVisible = false;
 });
 
