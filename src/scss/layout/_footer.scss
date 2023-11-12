@@ -1,0 +1,29 @@
+.footer-info {
+  padding: 1.6rem 1.6rem 1.9rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--text-gray);
+  background-color: var(--shaded-white);
+}
+
+.footer-info li {
+  padding-bottom: 1.6rem;
+}
+
+@media (min-width: 48em) {
+  .footer-info {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3.2rem;
+  }
+
+  .foundation {
+    text-align: start;
+  }
+
+  .privacy-policy {
+    text-align: end;
+    max-width: 30%;
+  }
+}

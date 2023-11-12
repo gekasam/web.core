@@ -3,6 +3,12 @@
 .button  {
   background: none;
   border: none;
+  transition: 0.1s ease-in;
+}
+
+.button:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /*Round buttons*/
@@ -11,12 +17,6 @@
   border-radius: 50%;
   display: flex;
   align-items: center;
-  transition: 0.1s ease-in;
-}
-
-.button--round:hover {
-  opacity: 0.8;
-  cursor: pointer;
 }
 
 .button-icon {
@@ -27,10 +27,34 @@
   background-repeat: no-repeat;
 }
 
+/* Wide buttons */
+
+.button--wide {
+  padding: 1.2rem 1.6rem;
+  background-color: var(--button-color);
+  color: var(--pure-white);
+  border-radius: 5rem;
+  width: 10rem;
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-icon__arrow-right {
+  background-image: url(../assets/icons/arrowRight.svg);
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.commercial-proosal .button-icon__arrow-right {
+  background-image: url(../assets/icons/arrowRightRed.svg);
+}
+
 /*Content page buttons*/
 
 .button-icon__sidebar-open-button {
-  background-image: url(assets/icons/burger.svg);
+  background-image: url(../assets/icons/burger.svg);
 }
 
 .header__action-buttons .button {
@@ -47,15 +71,19 @@
 }
 
 .button-icon__repair-button {
-  background-image: url(assets/icons/repair.svg);
+  background-image: url(../assets/icons/repair.svg);
 }
 
 .button-icon__checkstatus-button {
-  background-image: url(assets/icons/checkstatus.svg);
+  background-image: url(../assets/icons/checkstatus.svg);
 }
 
 .button-icon__go-button {
-  background-image: url(assets/icons/go.svg);
+  background-image: url(../assets/icons/go.svg);
+}
+
+.button-icon__go-button {
+  margin: 1.6rem;
 }
 
 .more {
@@ -73,14 +101,14 @@
   content: "";
   width: 2.4rem;
   height: 2.4rem;
-  background: url(assets/icons/expand.svg);
+  background: url(../assets/icons/expand.svg);
 }
 
 .more-reverse::before {
   content: "";
   width: 2.4rem;
   height: 2.4rem;
-  background: url(assets/icons/expand.svg);
+  background: url(../assets/icons/expand.svg);
   transform: rotate(180deg);
 }
 
@@ -92,11 +120,11 @@
 /*Side menu buttons*/
 
 .button-icon__sidebar-closer-button {
-  background-image: url(assets/icons/closer.svg);
+  background-image: url(../assets/icons/closer.svg);
 }
 
 .button-icon__search-button {
-  background-image: url(assets/icons/search.svg);
+  background-image: url(../assets/icons/search.svg);
 }
 
 .sidebar__action-buttons {
@@ -110,15 +138,15 @@
 }
 
 .button-icon__call-button {
-  background-image: url(assets/icons/call.svg);
+  background-image: url(../assets/icons/call.svg);
 }
 
 .button-icon__chat-button {
-  background-image: url(assets/icons/chat.svg);
+  background-image: url(../assets/icons/chat.svg);
 }
 
 .button-icon__profile-button {
-  background-image: url(assets/icons/profile.svg);
+  background-image: url(../assets/icons/profile.svg);
 }
 
 .radio-lang__label {

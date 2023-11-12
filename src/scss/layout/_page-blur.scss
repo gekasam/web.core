@@ -1,0 +1,16 @@
+.page-blur {
+  position: fixed;
+  width: 0;
+  height: 0;
+  background: var(--pure-white);
+  opacity: 0.04;
+  transition: opacity ease-out 0.5s, width 0s 0.5s, height 0s 0.5s;
+  z-index: 50;
+}
+
+.page-blur--active {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity ease-out 0.5s;
+}

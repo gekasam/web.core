@@ -1,0 +1,10 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 70em) {
+  .page {
+    flex-direction: row;
+  }
+}

@@ -15,6 +15,7 @@
 .sidebar__nav-ref:focus {
   color: var(--text-gray);
 }
+
 .sidebar__nav-ref:focus::before {
   position: absolute;
   left: -2.4rem;

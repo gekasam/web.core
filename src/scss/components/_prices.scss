@@ -1,0 +1,152 @@
+.pricesSwiper .swiper-slide {
+  background-color: var(--pure-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid var(--light-gray);
+  border-radius: 0.6rem;
+}
+
+.pricesSwiper::after {
+  content: "";
+  width: 5rem;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to right, var(--fadeout-start) 0, var(--fadeout-middle) 50%, var(--shaded-white) 70%);
+  position: absolute;
+  z-index: 10;
+}
+
+.price-details {
+  display: grid;
+  grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "c c d d"
+  ;
+  padding: 1.6rem;
+  flex-grow: 1;
+  row-gap: 1.6rem;
+}
+
+.price-details_block1 {
+  grid-area: a;
+}
+
+.price-details_block2 {
+  grid-area: b;
+}
+
+.price-details_block3 {
+  grid-area: c;
+}
+
+.button__order {
+  align-self: flex-end;
+  justify-self: end;
+  grid-area: d;
+}
+
+.price-details__header {
+  color: var(--text-gray)
+}
+
+.price__go {
+  align-self: flex-end;
+}
+
+.pricesSwiper .swiper-pagination {
+  position: static;
+  padding-top: 1.6rem;
+}
+
+.pricesSwiper .swiper-pagination-bullet {
+  opacity: 1;
+  background: var(--swiper-bullet);
+}
+
+.pricesSwiper .swiper-pagination-bullet-active {
+  background: var(--swiper-bullet-active);
+}
+
+.prices__footer {
+  width: 80%;
+  padding: 1.6rem;
+}
+
+.prices__disclaimer {
+  padding-top: 3.2rem;
+  padding-bottom: 2.8rem;
+}
+
+.commercial-proosal {
+  color: var(--text-black);
+  text-decoration: none;
+}
+
+.commercial-proosal .button-icon {
+  margin-left: 1rem;
+}
+
+@media (min-width: 48em) {
+  .prices__header {
+    background-color: transparent;
+  }
+
+  .pricesSwiper::after {
+    display: none;
+  }
+
+  .pricesSwiper .swiper-wrapper {
+    display: block;
+  }
+
+  .price-details__headers {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    padding: 1.6rem;
+  }
+
+  .price-details {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-areas: none;
+    padding: 1.6rem;
+    row-gap: 0;
+  }
+
+  .price-details_block1 {
+    grid-area: unset;
+  }
+  
+  .price-details_block2 {
+    grid-area: unset;
+  }
+  
+  .price-details_block3 {
+    grid-area: unset;
+  }
+  
+  .button__order {
+    grid-area: unset;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .prices__footer {
+    width: 60%;
+  }
+}
+
+@media (min-width: 70em) {
+  .pricesSwiper .swiper-wrapper {
+    grid-template-columns: repeat(4, minmax(25rem, 1fr));
+    column-gap: 3.2rem;
+  }
+
+  .prices__footer {
+    width: 40%;
+  }
+}

@@ -1,24 +1,3 @@
-.brands {
-  padding-bottom: 2.4rem;
-  border-bottom: 0.1rem solid var(--frosted-mint);
-  transition: 2s ease-in-out height;
-}
-
-.brands--full-height {
-  height: auto !important;
-}
-
-.brands__header {
-  color: var(--text-gray);
-  padding: 1.6rem 0 1.6rem 1.6rem;
-  background-color: var(--pure-white);
-}
-
-.brands__content {
-  padding-top: 1.6rem;
-  padding-left: 1.6rem;
-}
-
 .brandsSwiper .swiper-slide {
   background-color: var(--pure-white);
   display: flex;
@@ -55,33 +34,28 @@
 }
 
 .brand__logo--lenovo {
-  background-image: url(./assets/images/brands/lenovo.svg);
+  background-image: url(../assets/images/brands/lenovo.svg);
 }
 .brand__logo--samsung {
-  background-image: url(./assets/images/brands/samsung.svg);
+  background-image: url(../assets/images/brands/samsung.svg);
 }
 .brand__logo--apple {
-  background-image: url(./assets/images/brands/apple.svg);
+  background-image: url(../assets/images/brands/apple.svg);
 }
 .brand__logo--viewsonic {
-  background-image: url(./assets/images/brands/viewsonic.svg);
+  background-image: url(../assets/images/brands/viewsonic.svg);
 }
 .brand__logo--bosch {
-  background-image: url(./assets/images/brands/bosch.svg);
+  background-image: url(../assets/images/brands/bosch.svg);
 }
 .brand__logo--hp {
-  background-image: url(./assets/images/brands/hp.svg);
+  background-image: url(../assets/images/brands/hp.svg);
 }
 .brand__logo--acer {
-  background-image: url(./assets/images/brands/acer.svg);
+  background-image: url(../assets/images/brands/acer.svg);
 }
 .brand__logo--sony {
-  background-image: url(./assets/images/brands/sony.svg);
-}
-
-
-.button-icon__go-button {
-  margin: 1.6rem;
+  background-image: url(../assets/images/brands/sony.svg);
 }
 
 .brandsSwiper .swiper-pagination {
@@ -89,26 +63,27 @@
   padding-top: 1.6rem;
 }
 
+.brandsSwiper .swiper-pagination-bullet {
+  opacity: 1;
+  background: var(--swiper-bullet);
+}
+
+.brandsSwiper .swiper-pagination-bullet-active {
+  background: var(--swiper-bullet-active);
+}
+
 .brands__more {
   display: none;
 }
 
 @media (min-width: 48em) {
-  .brands {
-    padding: 2.4rem 2.4rem 3.2rem 2.4rem;
-  }
-
-  .brands__header {
-    background-color: transparent;
-  }
-
   .brandsSwiper::after {
     display: none;
   }
 
   .brandsSwiper .swiper-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(25rem, 1fr));
     column-gap: 2.4rem;
     row-gap: 1.6rem;
     overflow: hidden;
@@ -129,12 +104,8 @@
 }
 
 @media (min-width: 70em) {
-  .brands {
-    padding: 2.4rem 3.2rem 5rem 3rem;
-  }
-
   .brandsSwiper .swiper-wrapper {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(25rem, 1fr));
     column-gap: 3.2rem;
   }
 

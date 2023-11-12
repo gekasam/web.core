@@ -1,32 +1,32 @@
 @font-face {
   font-family: 'TT Lakes';
-  src: url('./assets/fonts/TTLakes/TTLakes-Bold.eot');
+  src: url('../assets/fonts/TTLakes/TTLakes-Bold.eot');
   src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-      url('./assets/fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
-      url('./assets/fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+      url('../assets/fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
+      url('../assets/fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Lakes';
-  src: url('./assets/fonts/TTLakes/TTLakes-Medium.eot');
+  src: url('../assets/fonts/TTLakes/TTLakes-Medium.eot');
   src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-      url('./assets/fonts/TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/TTLakes/TTLakes-Medium.woff') format('woff'),
-      url('./assets/fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+      url('../assets/fonts/TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/TTLakes/TTLakes-Medium.woff') format('woff'),
+      url('../assets/fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Lakes';
-  src: url('./assets/fonts/TTLakes/TTLakes-Regular.eot');
+  src: url('../assets/fonts/TTLakes/TTLakes-Regular.eot');
   src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-      url('./assets/fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
-      url('./assets/fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+      url('../assets/fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
+      url('../assets/fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -67,6 +67,11 @@ html {
   color: transparent;
 }
 
+.button--wide {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .content {
   font-size: 1.4rem;
   font-weight: normal;
@@ -75,6 +80,15 @@ html {
 .content__header {
   font-weight: bold;
   font-size: 2.8rem;
+}
+
+.price-content__header {
+  font-weight: 500;
+}
+
+.commercial-proosal {
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .nav {
@@ -89,13 +103,38 @@ html {
   font-weight: 500;
 }
 
-.brands__header {
+.services-info__header {
   font-size: 1.6rem;
   font-weight: normal;
 }
 
+.equipment-type__header {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.footer-info {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
 .contact-phone {
   font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.feedback__header {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.feedback__form input, .feedback__form textarea {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.feedback__submit-button {
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
