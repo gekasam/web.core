@@ -1,5 +1,4 @@
 .sidebar {
-  display: grid;
   position: fixed;
   top: 0;
   left: -100%;
@@ -35,6 +34,7 @@
     box-shadow: none;
     padding-top: 3.2rem;
     z-index: 49;
+    height: 100vh;
   }
   
   .sidebar__sidebar-closer-button {

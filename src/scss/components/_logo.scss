@@ -29,6 +29,10 @@
 }
 
 @media (min-width: 70em) {
+  .logo {
+    padding-left: 0;
+  }
+
   .header__logo {
     display: none;
   }

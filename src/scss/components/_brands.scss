@@ -12,8 +12,8 @@
   width: 5rem;
   height: 100%;
   top: 0;
-  right: 0;
-  background: linear-gradient(to right, var(--fadeout-start) 0, var(--fadeout-middle) 50%, var(--shaded-white) 70%);
+  right: -1rem;
+  background: linear-gradient(to right, var(--fadeout-start) 0, var(--fadeout-middle) 50%, var(--pure-white) 70%);
   position: absolute;
   z-index: 10;
 }
