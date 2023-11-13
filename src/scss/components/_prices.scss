@@ -119,6 +119,35 @@
     row-gap: 0;
   }
 
+  .swiper-wrapper .price {
+    flex-direction: column;
+  }
+
+  .price:nth-child(2) {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .price:nth-child(n+3):not(:last-child) {
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0;
+  }
+
+  .price:last-child {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .price:nth-child(n+2):not(:last-child)::after {
+    content: "";
+    width: 95%;
+    height: 0.1rem;
+    background-color: var(--light-gray);
+  }
+
   .price-details_block1 {
     grid-area: unset;
   }
