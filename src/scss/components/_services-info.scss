@@ -9,28 +9,31 @@
 }
 
 .services-info__content {
-  padding-top: 1.6rem;
-  padding-left: 1.6rem;
+  padding: 1.6rem 1.6rem 0 1.6rem;
 }
 
 .services-info__header {
   color: var(--text-gray);
   padding: 1.6rem 0 1.6rem 1.6rem;
-  background-color: var(--pure-white);
+  background: linear-gradient(45deg, var(--shaded-white), var(--pure-white));
 }
 
 @media (min-width: 48em) {
   .services-info {
-    padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+    padding: 0 0 3.2rem 2.4rem;
   }
-  
-  .services-info__header {
-    background-color: transparent;
+
+  .services-info__content {
+    padding-right: 2.3rem;
   }
 }
 
 @media (min-width: 70em) {
   .services-info {
-    padding: 2.4rem 3.2rem 5rem 3rem;
+    padding: 0 0 5rem 3rem;
+  }
+
+  .services-info__content {
+    padding-right: 3.2rem;
   }
 }
