@@ -5,6 +5,7 @@
   align-items: center;
   border: 0.1rem solid var(--light-gray);
   border-radius: 0.6rem;
+  box-sizing: border-box;
 }
 
 .pricesSwiper::after {
@@ -28,6 +29,7 @@
   padding: 1.6rem;
   flex-grow: 1;
   row-gap: 1.6rem;
+  box-sizing: content-box;
 }
 
 .price-details_block1 {
