@@ -1,10 +1,14 @@
 .brandsSwiper .swiper-slide {
   background-color: var(--pure-white);
+  border: 0.1rem solid var(--light-gray);
+  border-radius: 0.6rem;
+}
+
+.brandsSwiper .swiper-slide-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 0.1rem solid var(--light-gray);
-  border-radius: 0.6rem;
+  padding: 1.6rem;
 }
 
 .brandsSwiper::after {
@@ -20,7 +24,8 @@
 
 .brand__logo-wrap {
   height: 4.4rem;
-  padding: 1.6rem;
+  padding-right: 1.6rem;
+  /* padding: 1.6rem; */
   flex-grow: 1;
   display: block;
 }
@@ -88,7 +93,8 @@
     column-gap: 2.4rem;
     row-gap: 1.6rem;
     overflow: hidden;
-    height: 16.3rem;
+    height: 16.5rem;
+    box-sizing: border-box;
   }
 
   .brandsSwiper .swiper-slide {
