@@ -13,7 +13,8 @@ module.exports = (env) => {
       watchFiles: path.join(__dirname, 'src'),
       port: 3200
     },
-    devtool: env.prod ? '' : 'source-map',
+    
+    devtool: env.prod ? 'eval' : 'source-map',
     plugins: [
       new HtmlWebpackPlugin({
         template: './src/index.html',
