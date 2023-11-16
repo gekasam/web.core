@@ -57,17 +57,14 @@
   background-image: url(../assets/icons/burger.svg);
 }
 
-.header__action-buttons .action-buttons__button {
-  margin-left: 1.6rem;
+.header__action-buttons {
   display: none;
+  gap: 1.6rem;
 }
 
-.header__request-buttons {
+.request-buttons {
   display: flex;
-}
-
-.request-buttons__button {
-  margin-left: 1.6rem;
+  gap: 1.6rem;
 }
 
 .button-icon__repair-button {
@@ -160,8 +157,8 @@
 }
 
 @media (min-width: 34em) {
-  .header__action-buttons .button {
-    display: inline-block;
+  .header__action-buttons {
+    display: flex;
   }
 
   .header__request-buttons::before {
@@ -178,16 +175,14 @@
     display: none;
   }
 
-  .header__action-buttons .button {
+  .header__action-buttons {
     display: none;
   }
 
-  .header__request-buttons .button {
+  .request-buttons__button {
     border-radius: 1rem;
-  }
-
-  .header__request-buttons .button-icon {
-    margin-left: 0.8rem;
+    display: flex;
+    gap: 0.8rem;
   }
 
   .header__request-buttons::before {
