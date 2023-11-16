@@ -13,6 +13,10 @@ let buttonSideClose = document.querySelector('.sidebar__sidebar-closer-button');
 let pageBlur = document.querySelector('.page-blur');
 let sidebarVisible = false;
 
+/* About more */
+
+let moreToggleAbout = document.querySelector('.about__more');
+
 /* Brands more */
 
 let moreToggleBrands = document.querySelector('.brands__more');
@@ -60,6 +64,22 @@ pageBlur.addEventListener('click', () => {
   sidebarVisible = false;
   feedbackVisible = false;
   callVisible = false;
+});
+
+/* About more */
+
+moreToggleAbout.addEventListener('click', function() {
+
+  document.querySelector('.about__text').classList.toggle('about__text--full-height');
+
+  if (moreToggleAbout.textContent != 'Скрыть') {
+    moreToggleAbout.textContent = 'Скрыть';
+    moreToggleAbout.classList.toggle('more-reverse');
+  } else {
+    moreToggleAbout.textContent = 'Показать ещё';
+    moreToggleAbout.classList.toggle('more-reverse');
+  }
+  
 });
 
 /* Swiper brands */

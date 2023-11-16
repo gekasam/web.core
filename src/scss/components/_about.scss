@@ -7,8 +7,12 @@ $var: 0;
 
 .about__text {
   padding: 0 1.7rem 0.8rem 1.5rem;
-/*   height: 7.84rem;
-  overflow: hidden; */
+  height: 17rem;
+  overflow: hidden;
+}
+
+.about .about__text--full-height {
+  height: auto;
 }
 
 .about__text p {
@@ -32,6 +36,7 @@ $var: 0;
   }
   .about__text {
     padding-left: 0;
+    height: 22rem;
   }
   .about__image {
     min-width: 50%;
@@ -43,7 +48,7 @@ $var: 0;
 }
 
 @media (min-width: 70em) {
-  .about__text {
+  .about__text-wrapper {
     padding-top: 1rem;
     max-width: 40%;
   }
